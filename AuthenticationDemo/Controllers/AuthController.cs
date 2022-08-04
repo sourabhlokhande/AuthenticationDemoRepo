@@ -74,7 +74,7 @@ namespace AuthenticationDemo.Controllers
 
         private RequestedUserInfo ValidateUserCredentials(string? userName, string? password)
         {
-            return new RequestedUserInfo(1, "Mr.", userName, "Lokhande", "Pune");
+            return new RequestedUserInfo(1,userName,"Sourabh", "Lokhande", "Pune");
         }
     }
 }

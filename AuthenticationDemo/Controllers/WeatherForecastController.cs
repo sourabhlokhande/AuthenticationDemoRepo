@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace AuthenticationDemo.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [Authorize]
     public class WeatherForecastController : ControllerBase
     {
-        [HttpGet]
+        [HttpGet("Get")]
         public ActionResult<string> GetPeople()
         {
             return Ok("Authenticated User");
